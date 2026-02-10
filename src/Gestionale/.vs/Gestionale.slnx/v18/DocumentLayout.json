@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.api\\gestionale.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|solutionrelative:gestionale.api\\gestionale.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45BE6AE1-75D7-4217-A60A-58F7AA7159B9}|Gestionale.WinForm\\Gestionale.WinForm.csproj|C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\gestionale.winform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45BE6AE1-75D7-4217-A60A-58F7AA7159B9}|Gestionale.WinForm\\Gestionale.WinForm.csproj|solutionrelative:gestionale.winform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8706D561-3E7A-0D1B-BD7D-4195C865A44F}|Gestionale.Infrastructure\\Gestionale.Infrastructure.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8706D561-3E7A-0D1B-BD7D-4195C865A44F}|Gestionale.Infrastructure\\Gestionale.Infrastructure.csproj|solutionrelative:gestionale.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAB705E9-8B8A-4D6E-1393-67F3F455B2A4}|Gestionale.Domain\\Gestionale.Domain.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAB705E9-8B8A-4D6E-1393-67F3F455B2A4}|Gestionale.Domain\\Gestionale.Domain.csproj|solutionrelative:gestionale.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{447FD61C-0AF4-37B0-2E2E-BBF0B67002A4}|Gestionale.Application\\Gestionale.Application.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{447FD61C-0AF4-37B0-2E2E-BBF0B67002A4}|Gestionale.Application\\Gestionale.Application.csproj|solutionrelative:gestionale.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Gestionale.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\Gestionale.Api.csproj",
+              "RelativeDocumentMoniker": "Gestionale.Api\\Gestionale.Api.csproj",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\Gestionale.Api.csproj",
+              "RelativeToolTip": "Gestionale.Api\\Gestionale.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-10T14:10:58.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WinForm\\Form1.cs",
+              "RelativeDocumentMoniker": "Gestionale.WinForm\\Form1.cs",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WinForm\\Form1.cs [Design]",
+              "RelativeToolTip": "Gestionale.WinForm\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T14:10:45.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "Gestionale.Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "Gestionale.Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T14:06:28.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "Gestionale.Domain\\Class1.cs",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Domain\\Class1.cs",
+              "RelativeToolTip": "Gestionale.Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T14:06:00.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Application\\Class1.cs",
+              "RelativeDocumentMoniker": "Gestionale.Application\\Class1.cs",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Application\\Class1.cs",
+              "RelativeToolTip": "Gestionale.Application\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T14:05:45.409Z"
             }
           ]
         }

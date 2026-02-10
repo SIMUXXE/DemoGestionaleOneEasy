@@ -1,1 +1,12 @@
-<Solution />
+<Solution>
+  <Folder Name="/Backend/">
+    <Project Path="Gestionale.Api/Gestionale.Api.csproj" />
+    <Project Path="Gestionale.Application/Gestionale.Application.csproj" />
+    <Project Path="Gestionale.Domain/Gestionale.Domain.csproj" />
+    <Project Path="Gestionale.Infrastructure/Gestionale.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Frontend/">
+    <Project Path="Gestionale.WebApp/Gestionale.WebApp.csproj" />
+    <Project Path="Gestionale.WinForm/Gestionale.WinForm.csproj" Id="45be6ae1-75d7-4217-a60a-58f7aa7159b9" />
+  </Folder>
+</Solution>
