@@ -48,7 +48,10 @@ using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
-    // Applica eventuali migration
+    // genera il db in locale se non esiste (utile per sviluppo e test)
+    context.Database.EnsureCreated();
+
+    // Applica le eventuali migration
     context.Database.Migrate();
 
     // Seed dei dati fittizi
