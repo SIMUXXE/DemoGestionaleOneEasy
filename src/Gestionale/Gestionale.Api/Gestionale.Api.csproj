@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Gestionale.Domain\Gestionale.Domain.csproj" />
     <ProjectReference Include="..\Gestionale.Infrastructure\Gestionale.Infrastructure.csproj" />
+    <ProjectReference Include="..\Gestionale.Shared\Gestionale.Shared.csproj" />
   </ItemGroup>
 
 </Project>

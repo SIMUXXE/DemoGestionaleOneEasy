@@ -1,4 +1,4 @@
-﻿using Gestionale.Api.DTOs;
+﻿using Gestionale.Shared.DTOs;
 using Gestionale.Domain.Entities;
 
 namespace Gestionale.Api.Extensions

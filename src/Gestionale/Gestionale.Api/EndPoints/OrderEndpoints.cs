@@ -1,4 +1,4 @@
-﻿using Gestionale.Api.DTOs;
+﻿using Gestionale.Shared.DTOs;
 using Gestionale.Api.Extensions;
 using Gestionale.Api.Services.Interfaces;
 

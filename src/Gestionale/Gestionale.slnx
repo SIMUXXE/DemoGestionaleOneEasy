@@ -9,4 +9,7 @@
     <Project Path="Gestionale.WebApp/Gestionale.WebApp.csproj" />
     <Project Path="Gestionale.WinForm/Gestionale.WinForm.csproj" Id="45be6ae1-75d7-4217-a60a-58f7aa7159b9" />
   </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="Gestionale.Shared/Gestionale.Shared.csproj" Id="3b71bac3-32a9-44b5-8475-8e054fadac84" />
+  </Folder>
 </Solution>

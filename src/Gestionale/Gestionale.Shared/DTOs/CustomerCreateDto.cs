@@ -1,4 +1,4 @@
-﻿namespace Gestionale.Api.DTOs
+﻿namespace Gestionale.Shared.DTOs
 {
     public class CustomerCreateDto
     {

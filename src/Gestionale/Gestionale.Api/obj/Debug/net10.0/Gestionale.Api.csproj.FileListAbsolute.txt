@@ -39,6 +39,9 @@ C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestio
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Mono.TextTemplating.dll
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\System.ClientModel.dll
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\System.CodeDom.dll
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\System.Composition.AttributedModel.dll
@@ -135,8 +138,10 @@ C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestio
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Gestionale.Domain.dll
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Gestionale.Infrastructure.dll
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Gestionale.Shared.dll
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Gestionale.Domain.pdb
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Gestionale.Infrastructure.pdb
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Gestionale.Shared.pdb
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\obj\Debug\net10.0\Gestionale.Api.csproj.AssemblyReference.cache
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\obj\Debug\net10.0\Gestionale.Api.GeneratedMSBuildEditorConfig.editorconfig
@@ -162,6 +167,3 @@ C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestio
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\obj\Debug\net10.0\Gestionale.Api.pdb
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\obj\Debug\net10.0\Gestionale.Api.genruntimeconfig.cache
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\obj\Debug\net10.0\ref\Gestionale.Api.dll
-C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
