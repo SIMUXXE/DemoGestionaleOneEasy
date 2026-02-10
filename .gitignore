@@ -1,2 +1,3 @@
 # Visual Studio
 .vs/
+/src/Gestionale/Gestionale.Api/appsettings.json
