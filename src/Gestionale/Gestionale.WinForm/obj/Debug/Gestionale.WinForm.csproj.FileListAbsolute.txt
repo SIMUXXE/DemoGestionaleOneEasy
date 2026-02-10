@@ -1,0 +1,9 @@
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WinForm\bin\Debug\Gestionale.WinForm.exe.config
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WinForm\bin\Debug\Gestionale.WinForm.exe
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WinForm\bin\Debug\Gestionale.WinForm.pdb
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WinForm\obj\Debug\Gestionale.WinForm.csproj.AssemblyReference.cache
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WinForm\obj\Debug\Gestionale.WinForm.Properties.Resources.resources
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WinForm\obj\Debug\Gestionale.WinForm.csproj.GenerateResource.cache
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WinForm\obj\Debug\Gestionale.WinForm.csproj.CoreCompileInputs.cache
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WinForm\obj\Debug\Gestionale.WinForm.exe
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WinForm\obj\Debug\Gestionale.WinForm.pdb
