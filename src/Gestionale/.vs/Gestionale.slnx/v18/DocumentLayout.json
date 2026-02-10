@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.api\\endpoints\\customerendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|solutionrelative:gestionale.api\\endpoints\\customerendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|solutionrelative:gestionale.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8706D561-3E7A-0D1B-BD7D-4195C865A44F}|Gestionale.Infrastructure\\Gestionale.Infrastructure.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.infrastructure\\di\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8706D561-3E7A-0D1B-BD7D-4195C865A44F}|Gestionale.Infrastructure\\Gestionale.Infrastructure.csproj|solutionrelative:gestionale.infrastructure\\di\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.api\\extensions\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|solutionrelative:gestionale.api\\extensions\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.api\\extensions\\mappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|solutionrelative:gestionale.api\\extensions\\mappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.api\\endpoints\\orderendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|solutionrelative:gestionale.api\\endpoints\\orderendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.api\\endpoints\\customerendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B25CB594-C957-22FA-4ABD-16B5945213EA}|Gestionale.Api\\Gestionale.Api.csproj|solutionrelative:gestionale.api\\endpoints\\customerendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8706D561-3E7A-0D1B-BD7D-4195C865A44F}|Gestionale.Infrastructure\\Gestionale.Infrastructure.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.infrastructure\\di\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8706D561-3E7A-0D1B-BD7D-4195C865A44F}|Gestionale.Infrastructure\\Gestionale.Infrastructure.csproj|solutionrelative:gestionale.infrastructure\\di\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +42,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "ExceptionMiddlewareExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "Gestionale.Api\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "RelativeToolTip": "Gestionale.Api\\Extensions\\ExceptionMiddlewareExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T15:49:56.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MappingExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\Extensions\\MappingExtensions.cs",
+              "RelativeDocumentMoniker": "Gestionale.Api\\Extensions\\MappingExtensions.cs",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\Extensions\\MappingExtensions.cs",
+              "RelativeToolTip": "Gestionale.Api\\Extensions\\MappingExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T15:47:58.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Infrastructure\\DI\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Gestionale.Infrastructure\\DI\\DependencyInjection.cs",
               "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Infrastructure\\DI\\DependencyInjection.cs",
               "RelativeToolTip": "Gestionale.Infrastructure\\DI\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-10T15:32:46.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\Program.cs",
               "RelativeDocumentMoniker": "Gestionale.Api\\Program.cs",
               "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\Program.cs",
               "RelativeToolTip": "Gestionale.Api\\Program.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAADYAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-10T15:32:18.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "OrderEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\EndPoints\\OrderEndpoints.cs",
               "RelativeDocumentMoniker": "Gestionale.Api\\EndPoints\\OrderEndpoints.cs",
               "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\EndPoints\\OrderEndpoints.cs",
               "RelativeToolTip": "Gestionale.Api\\EndPoints\\OrderEndpoints.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwCsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-10T15:31:32.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "CustomerEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\EndPoints\\CustomerEndpoints.cs",
               "RelativeDocumentMoniker": "Gestionale.Api\\EndPoints\\CustomerEndpoints.cs",
               "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Api\\EndPoints\\CustomerEndpoints.cs",
               "RelativeToolTip": "Gestionale.Api\\EndPoints\\CustomerEndpoints.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-10T15:30:31.459Z",
               "EditorCaption": ""

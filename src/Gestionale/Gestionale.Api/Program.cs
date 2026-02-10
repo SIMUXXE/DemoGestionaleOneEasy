@@ -1,4 +1,5 @@
 using Gestionale.Api.EndPoints;
+using Gestionale.Api.Extensions;
 using Gestionale.Api.Services.Implementations;
 using Gestionale.Api.Services.Interfaces;
 using Gestionale.Infrastructure.Data;
@@ -57,6 +58,9 @@ using (var scope = app.Services.CreateScope())
     // Seed dei dati fittizi
     DbSeeder.Seed(context);
 }
+
+// Middleware eccezioni globale
+app.ConfigureExceptionHandler();
 
 // Mapping endpoints minimal API
 app.MapCustomerEndpoints();

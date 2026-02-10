@@ -1,7 +1,7 @@
 ﻿using Gestionale.Api.DTOs;
 using Gestionale.Domain.Entities;
 
-namespace Gestionale.Api.Mapping
+namespace Gestionale.Api.Extensions
 {
     public static class MappingExtensions
     {

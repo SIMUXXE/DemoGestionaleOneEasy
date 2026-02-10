@@ -1,5 +1,5 @@
 ﻿using Gestionale.Api.DTOs;
-using Gestionale.Api.Mapping;
+using Gestionale.Api.Extensions;
 using Gestionale.Api.Services.Interfaces;
 
 namespace Gestionale.Api.EndPoints
