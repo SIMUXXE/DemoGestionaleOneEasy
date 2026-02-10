@@ -15,5 +15,6 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)mudblazor\8.15.0\buildTransitive\MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor\8.15.0\buildTransitive\MudBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.app.internal.assets\10.0.2\build\Microsoft.AspNetCore.App.Internal.Assets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.app.internal.assets\10.0.2\build\Microsoft.AspNetCore.App.Internal.Assets.props')" />
   </ImportGroup>
 </Project>

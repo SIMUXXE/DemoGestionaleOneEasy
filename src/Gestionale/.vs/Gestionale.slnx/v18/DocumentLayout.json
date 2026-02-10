@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.webapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|solutionrelative:gestionale.webapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Gestionale.WebApp\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Gestionale.WebApp\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T16:07:25.236Z",
+              "EditorCaption": ""
             }
           ]
         }

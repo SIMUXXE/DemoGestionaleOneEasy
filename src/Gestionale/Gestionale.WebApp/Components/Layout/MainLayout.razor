@@ -10,7 +10,6 @@
         <MudText Typo="Typo.h5" Class="ml-3">Application</MudText>
         <MudSpacer />
         <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle" />
-        <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
     </MudAppBar>
     <MudDrawer id="nav-drawer" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu />
@@ -56,46 +55,54 @@
 
     private readonly PaletteLight _lightPalette = new()
     {
-        Black = "#110e2d",
-        AppbarText = "#424242",
-        AppbarBackground = "rgba(255,255,255,0.8)",
-        DrawerBackground = "#ffffff",
-        GrayLight = "#e8e8e8",
-        GrayLighter = "#f9f9f9",
+        Black = "#1B1B1F",
+        AppbarText = "#1B1B1F",
+        AppbarBackground = "#FFFFFF",
+        DrawerBackground = "#F5F5F7",
+        GrayLight = "#E0E0E0",
+        GrayLighter = "#F8F8F9",
+        Primary = "#4A90E2",            // colore principale moderno
+        Success = "#27AE60",
+        Warning = "#F5A623",
+        Error = "#E74C3C",
+        Info = "#3498DB",
+        TextPrimary = "#1B1B1F",
+        TextSecondary = "#4A4A4A",
+        TextDisabled = "#9B9B9B",
+        LinesDefault = "#D8D8D8",
+        TableLines = "#D8D8D8",
+        Divider = "#CFCFCF",
+        OverlayLight = "#00000033"      // leggera trasparenza per overlay
     };
 
     private readonly PaletteDark _darkPalette = new()
     {
-        Primary = "#7e6fff",
-        Surface = "#1e1e2d",
-        Background = "#1a1a27",
-        BackgroundGray = "#151521",
-        AppbarText = "#92929f",
-        AppbarBackground = "rgba(26,26,39,0.8)",
-        DrawerBackground = "#1a1a27",
-        ActionDefault = "#74718e",
-        ActionDisabled = "#9999994d",
-        ActionDisabledBackground = "#605f6d4d",
-        TextPrimary = "#b2b0bf",
-        TextSecondary = "#92929f",
-        TextDisabled = "#ffffff33",
-        DrawerIcon = "#92929f",
-        DrawerText = "#92929f",
-        GrayLight = "#2a2833",
-        GrayLighter = "#1e1e2d",
-        Info = "#4a86ff",
-        Success = "#3dcb6c",
-        Warning = "#ffb545",
-        Error = "#ff3f5f",
-        LinesDefault = "#33323e",
-        TableLines = "#33323e",
-        Divider = "#292838",
-        OverlayLight = "#1e1e2d80",
+        Primary = "#E0E0E0",               
+        Surface = "#2B2B2F",               
+        Background = "#1E1E22",            
+        BackgroundGray = "#232326",         
+        AppbarText = "#FFFFFF",            
+        AppbarBackground = "#2B2B2FCC",    
+        DrawerBackground = "#232326",      
+        ActionDefault = "#B0B0B0",         
+        ActionDisabled = "#7A7A7A",        
+        ActionDisabledBackground = "#5A5A5A33", 
+        TextPrimary = "#FFFFFF",            
+        TextSecondary = "#CFCFCF",          
+        TextDisabled = "#7A7A7A",           
+        DrawerIcon = "#CFCFCF",             
+        DrawerText = "#FFFFFF",             
+        GrayLight = "#3A3A42",              
+        GrayLighter = "#2B2B2F",            
+        LinesDefault = "#3C3C46",           
+        TableLines = "#3C3C46",             
+        Divider = "#4A4A55",                
+        OverlayLight = "#00000080"          
     };
 
     public string DarkLightModeButtonIcon => _isDarkMode switch
     {
-        true => Icons.Material.Rounded.AutoMode,
+        true => Icons.Material.Rounded.WbSunny,
         false => Icons.Material.Outlined.DarkMode,
     };
 }

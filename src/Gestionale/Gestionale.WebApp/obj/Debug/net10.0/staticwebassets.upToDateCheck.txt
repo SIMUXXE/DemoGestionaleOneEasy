@@ -1,0 +1,6 @@
+C:\Users\Simone\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.2\build\..\_framework\blazor.server.js
+C:\Users\Simone\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.2\build\..\_framework\blazor.web.js
+C:\Users\Simone\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.2\_framework\blazor.server.js
+C:\Users\Simone\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.2\_framework\blazor.web.js
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\wwwroot\favicon.ico
+wwwroot\favicon.ico
