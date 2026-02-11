@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.webapp\\components\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|solutionrelative:gestionale.webapp\\components\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.webapp\\components\\pages\\customers\\createcustomer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|solutionrelative:gestionale.webapp\\components\\pages\\customers\\createcustomer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.webapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|solutionrelative:gestionale.webapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.webapp\\components\\pages\\customers\\customerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|solutionrelative:gestionale.webapp\\components\\pages\\customers\\customerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|c:\\users\\simone\\source\\repos\\simuxxe\\demogestionaleoneeasy\\src\\gestionale\\gestionale.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C5852D6-B2CF-591D-DFC3-3792DCBA4E47}|Gestionale.WebApp\\Gestionale.WebApp.csproj|solutionrelative:gestionale.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Gestionale.WebApp\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Components\\_Imports.razor",
+              "RelativeToolTip": "Gestionale.WebApp\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-11T13:28:45.11Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dashboard.razor",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Components\\Dashboard.razor",
+              "RelativeDocumentMoniker": "Gestionale.WebApp\\Components\\Dashboard.razor",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Components\\Dashboard.razor",
+              "RelativeToolTip": "Gestionale.WebApp\\Components\\Dashboard.razor",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAkwFQAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-11T14:22:09.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateCustomer.razor",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Components\\Pages\\Customers\\CreateCustomer.razor",
+              "RelativeDocumentMoniker": "Gestionale.WebApp\\Components\\Pages\\Customers\\CreateCustomer.razor",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Components\\Pages\\Customers\\CreateCustomer.razor",
+              "RelativeToolTip": "Gestionale.WebApp\\Components\\Pages\\Customers\\CreateCustomer.razor",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-11T14:11:11.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "Gestionale.WebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Program.cs",
+              "RelativeToolTip": "Gestionale.WebApp\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T14:04:54.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerList.razor",
+              "DocumentMoniker": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "RelativeDocumentMoniker": "Gestionale.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "ToolTip": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "RelativeToolTip": "Gestionale.WebApp\\Components\\Pages\\Customers\\CustomerList.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAFAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-11T13:27:27.59Z",
+              "EditorCaption": ""
             }
           ]
         }

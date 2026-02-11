@@ -1,0 +1,167 @@
+﻿@page "/dashboard"
+
+<MudContainer MaxWidth="MaxWidth.Large" Class="mt-8">
+
+    <MudText Typo="Typo.h4" Class="mb-6">
+        Dashboard Overview
+    </MudText>
+
+    <MudGrid>
+
+        <!-- Total Customers -->
+        <MudItem xs="12" md="4">
+            <MudPaper Class="pa-6 text-center" Elevation="2">
+                <MudIcon Icon="@Icons.Material.Filled.People" Size="Size.Large" Class="mb-2" />
+                <MudText Typo="Typo.h5">Customers</MudText>
+                @if (_isLoading)
+                {
+                    <MudProgressCircular Indeterminate="true" />
+                }
+                else
+                {
+                    <MudText Typo="Typo.h4" Color="Color.Primary">
+                        @_totalCustomers
+                    </MudText>
+                }
+            </MudPaper>
+        </MudItem>
+
+        <!-- Total Orders -->
+        <MudItem xs="12" md="4">
+            <MudPaper Class="pa-6 text-center" Elevation="2">
+                <MudIcon Icon="@Icons.Material.Filled.ShoppingCart" Size="Size.Large" Class="mb-2" />
+                <MudText Typo="Typo.h5">Orders</MudText>
+                @if (_isLoading)
+                {
+                    <MudProgressCircular Indeterminate="true" />
+                }
+                else
+                {
+                    <MudText Typo="Typo.h4" Color="Color.Primary">
+                        @_totalOrders
+                    </MudText>
+                }
+            </MudPaper>
+        </MudItem>
+
+        <!-- Total Revenue -->
+        <MudItem xs="12" md="4">
+            <MudPaper Class="pa-6 text-center" Elevation="2">
+                <MudIcon Icon="@Icons.Material.Filled.AttachMoney" Size="Size.Large" Class="mb-2" />
+                <MudText Typo="Typo.h5">Total Revenue</MudText>
+                @if (_isLoading)
+                {
+                    <MudProgressCircular Indeterminate="true" />
+                }
+                else
+                {
+                    <MudText Typo="Typo.h4" Color="Color.Primary">
+                        @_totalRevenue.ToString("C")
+                    </MudText>
+                }
+            </MudPaper>
+        </MudItem>
+
+    </MudGrid>
+
+    <MudDivider Class="my-6" />
+
+    <MudPaper Class="pa-6" Elevation="1">
+        <MudText Typo="Typo.h6" Class="mb-4">
+            Recent Activity (Outline)
+        </MudText>
+
+    <MudList T="object" Dense="true" >
+
+        <!-- Last Created Customer -->
+        <MudListItem>
+            @if (_lastCustomer is null)
+            {
+                <MudProgressCircular Indeterminate="true" Color="Color.Primary" Size="Size.Medium" />
+            }
+            else
+            {
+                <MudCard Class="pa-3">
+                    <MudText Typo="Typo.h6" Color="Color.Tertiary">Last registered Customer</MudText>
+                    <MudText Typo="Typo.subtitle1">@_lastCustomer.FullName</MudText>
+                    <MudText Typo="Typo.body2">@_lastCustomer.Email</MudText>
+                </MudCard>
+            }
+        </MudListItem>
+
+        <!-- Last Created Order -->
+        <MudListItem>
+            @if (_lastOrder is null)
+            {
+                <MudProgressCircular Indeterminate="true" Color="Color.Primary" Size="Size.Medium" />
+            }
+            else
+            {
+                <MudCard Class="pa-3">
+                    <MudText Typo="Typo.h6" Color="Color.Tertiary">Last Order</MudText>
+                    <MudText Typo="Typo.subtitle1">Order #@_lastOrder.Id</MudText>
+                    <MudText Typo="Typo.body2">Customer: @_lastOrder.CustomerId</MudText>
+                    <MudText Typo="Typo.caption">Amount: @_lastOrder.TotalAmount:C</MudText>
+                    <MudText Typo="Typo.caption">Date: @_lastOrder.OrderDate:g</MudText>
+                </MudCard>
+            }
+        </MudListItem>
+
+        <!-- Highest Order Amount -->
+        <MudListItem>
+            @if (_highestOrder is null)
+            {
+                <MudProgressCircular Indeterminate="true" Color="Color.Primary" Size="Size.Medium" />
+            }
+            else
+            {
+                <MudCard Class="pa-3">
+                    <MudText Typo="Typo.h6" Color="Color.Tertiary">Highest Order</MudText>
+                    <MudText Typo="Typo.subtitle1">Order #@_highestOrder.Id</MudText>
+                    <MudText Typo="Typo.body2">Customer: @_highestOrder.CustomerId</MudText>
+                    <MudText Typo="Typo.caption">Amount: @_highestOrder.TotalAmount</MudText>
+                </MudCard>
+            }
+        </MudListItem>
+
+    </MudList>    </MudPaper>
+
+</MudContainer>
+
+@code{
+    private bool _isLoading = true;
+
+    private int _totalCustomers = 0;
+    private int _totalOrders = 0;
+    private decimal _totalRevenue = 0m;
+
+    private CustomerDto? _lastCustomer;
+    private OrderDto? _lastOrder;
+    private OrderDto? _highestOrder;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var customers = await _apiClient.GetAllAsync<CustomerDto>("customers");
+            var orders = await _apiClient.GetAllAsync<OrderDto>("orders");
+
+            _totalCustomers = customers.Count;
+            _totalOrders = orders.Count;
+            _totalRevenue = orders.Sum(o => o.TotalAmount);
+
+            _lastCustomer = customers.FirstOrDefault();
+            _lastOrder = orders.OrderByDescending(o => o.OrderDate).FirstOrDefault();
+            _highestOrder = orders.OrderByDescending(o => o.TotalAmount).FirstOrDefault();
+        }
+        catch (Exception ex)
+        {
+            _snackbar.Add("Failed to load dashboard data.", Severity.Error);
+        }
+        finally
+        {
+            _isLoading = false;
+        }
+    }
+
+}

@@ -1,5 +1,7 @@
 using MudBlazor.Services;
 using Gestionale.WebApp.Components;
+using Gestionale.WebApp.ApiClient;
+using MudBlazor;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,21 @@ builder.Services.AddMudServices();
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddScoped(sp =>
+{
+    var client = new HttpClient
+    {
+        BaseAddress = new Uri(builder.Configuration["ApiBaseAddress"]) // API URL From configuration
+    };
+
+    return client;
+});
+
+builder.Services.AddScoped<IApiClient, ApiClient>();
+
+
+builder.Services.AddScoped<IApiClient, ApiClient>();
 
 var app = builder.Build();
 

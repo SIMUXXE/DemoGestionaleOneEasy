@@ -10,3 +10,12 @@
 @using MudBlazor.Services
 @using Gestionale.WebApp
 @using Gestionale.WebApp.Components
+@using Gestionale.WebApp.ApiClient
+@using Gestionale.Shared.DTOs
+@using Gestionale.Shared.Extensions
+
+@* injected services *@
+@inject NavigationManager _navManager
+@inject IDialogService _dialogService
+@inject ISnackbar _snackbar
+@inject IApiClient _apiClient

@@ -1,0 +1,92 @@
+﻿@page "/create-customer"
+
+<MudContainer MaxWidth="MaxWidth.Small" Class="mt-6">
+
+    <MudPaper Elevation="3" Class="pa-6">
+
+        <MudText Typo="Typo.h5" Class="mb-4">
+            Create New Customer
+        </MudText>
+
+        <EditForm @ref="_form" Model="_model" OnValidSubmit="OnValidSubmit">
+
+            <MudTextField T="string"
+                          Label="First Name"
+                          @bind-Value="_model.FirstName"
+                          Required="true"
+                          RequiredError="First name is required"
+                          Variant="Variant.Outlined"
+                          Class="mb-3" />
+
+            <MudTextField T="string"
+                          Label="Last Name"
+                          @bind-Value="_model.LastName"
+                          Required="true"
+                          RequiredError="Last name is required"
+                          Variant="Variant.Outlined"
+                          Class="mb-3" />
+
+            <MudTextField T="string"
+                          Label="Email"
+                          @bind-Value="_model.Email"
+                          Required="true"
+                          RequiredError="Email is required"
+                          Variant="Variant.Outlined"
+                          Class="mb-4" />
+
+            <MudStack Row="true" Spacing="2" Justify="Justify.FlexEnd">
+
+                <MudButton Variant="Variant.Text"
+                           Color="Color.Secondary"
+                           OnClick="@(() => _navManager.NavigateTo("/customer-list"))">
+                    Cancel
+                </MudButton>
+
+                <MudButton ButtonType="ButtonType.Submit"
+                           Variant="Variant.Outlined"
+                           Color="Color.Primary"
+                           Disabled="_isLoading">    
+                    @_submitText
+                </MudButton>
+
+            </MudStack>
+
+        </EditForm>
+
+    </MudPaper>
+
+</MudContainer>
+
+@code {
+
+    private EditForm? _form;
+    private bool _isLoading = false;
+
+    private string _submitText => _isLoading ? "Creating..." : "Create";
+
+    private CreateCustomerDto _model = new();
+
+    private async Task OnValidSubmit()
+    {
+        if (_form is null)
+            return;
+
+        try
+        {
+            _isLoading = true;
+
+            await _apiClient.PostAsync<CreateCustomerDto, CustomerDto>("customers",_model);
+
+            _snackbar.Add("Customer created successfully!", Severity.Success);
+
+        }
+        catch (Exception ex)
+        {
+            _snackbar.Add($"Error: {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _isLoading = false;
+        }
+    }
+}

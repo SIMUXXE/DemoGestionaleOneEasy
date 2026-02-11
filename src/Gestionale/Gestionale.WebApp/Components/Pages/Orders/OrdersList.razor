@@ -1,0 +1,60 @@
+﻿@page "/orders-list"
+
+<MudContainer MaxWidth="MaxWidth.Large" Class="mt-6">
+
+    <MudText Typo="Typo.h5" GutterBottom="true">
+        Orders
+    </MudText>
+
+    <MudPaper Elevation="2" Class="pa-4">
+
+        @if (_loading)
+        {
+            <MudProgressCircular Indeterminate="true" />
+        }
+        else
+        {
+            <MudTable Items="_orders" Hover="true" Striped="true">
+
+                <HeaderContent>
+                    <MudTh>Id</MudTh>
+                    <MudTh>Customer Id</MudTh>
+                    <MudTh>Date</MudTh>
+                    <MudTh>Total</MudTh>
+                </HeaderContent>
+
+                <RowTemplate>
+                    <MudTd>@context.Id</MudTd>
+                    <MudTd>@context.CustomerId</MudTd>
+                    <MudTd>@context.OrderDate.ToShortDateString()</MudTd>
+                    <MudTd>@context.TotalAmount.ToString("C")</MudTd>
+                </RowTemplate>
+
+            </MudTable>
+        }
+
+    </MudPaper>
+
+</MudContainer>
+
+@code {
+
+    private List<OrderDto> _orders = new();
+    private bool _loading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _orders = await _apiClient.GetAllAsync<OrderDto>("orders");
+        }
+        catch (Exception ex)
+        {
+            _snackbar.Add($"Error loading orders: {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+}

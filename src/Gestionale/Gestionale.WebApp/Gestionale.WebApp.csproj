@@ -13,12 +13,6 @@
 
 
   <ItemGroup>
-    <Folder Include="Components\Pages\Customers\" />
-    <Folder Include="Components\Pages\Orders\" />
-  </ItemGroup>
-
-
-  <ItemGroup>
     <ProjectReference Include="..\Gestionale.Shared\Gestionale.Shared.csproj" />
   </ItemGroup>
 </Project>

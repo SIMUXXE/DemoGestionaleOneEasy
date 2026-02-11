@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "BE+FE-Web",
+    "Projects": [
+      {
+        "Path": "Gestionale.Api\\Gestionale.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Gestionale.WebApp\\Gestionale.WebApp.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
