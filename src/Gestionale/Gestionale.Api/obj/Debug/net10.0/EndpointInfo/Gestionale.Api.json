@@ -36,7 +36,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerCreateDto"
+                "$ref": "#/components/schemas/CreateCustomerDto"
               }
             }
           },
@@ -92,7 +92,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerCreateDto"
+                "$ref": "#/components/schemas/CreateCustomerDto"
               }
             }
           },
@@ -158,7 +158,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderCreateDto"
+                "$ref": "#/components/schemas/CreateOrderDto"
               }
             }
           },
@@ -190,7 +190,14 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrderDto"
+                }
+              }
+            }
           }
         }
       },
@@ -214,7 +221,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderCreateDto"
+                "$ref": "#/components/schemas/CreateOrderDto"
               }
             }
           },
@@ -286,7 +293,7 @@
   },
   "components": {
     "schemas": {
-      "CustomerCreateDto": {
+      "CreateCustomerDto": {
         "type": "object",
         "properties": {
           "firstName": {
@@ -300,6 +307,24 @@
           "email": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateOrderDto": {
+        "type": "object",
+        "properties": {
+          "orderDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "totalAmount": {
+            "type": "number",
+            "format": "double"
+          },
+          "customerId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false
@@ -318,20 +343,6 @@
           "email": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "OrderCreateDto": {
-        "type": "object",
-        "properties": {
-          "totalAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "customerId": {
-            "type": "string",
-            "format": "uuid"
           }
         },
         "additionalProperties": false

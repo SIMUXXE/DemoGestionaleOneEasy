@@ -8,6 +8,10 @@ C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestio
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\bin\Debug\net10.0\Gestionale.WebApp.dll
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\bin\Debug\net10.0\Gestionale.WebApp.pdb
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\bin\Debug\net10.0\MudBlazor.dll
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\bin\Debug\net10.0\Gestionale.Domain.dll
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\bin\Debug\net10.0\Gestionale.Shared.dll
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\bin\Debug\net10.0\Gestionale.Shared.pdb
+C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\bin\Debug\net10.0\Gestionale.Domain.pdb
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\obj\Debug\net10.0\EmbeddedAttribute.cs
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\obj\Debug\net10.0\ValidatableTypeAttribute.cs
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\obj\Debug\net10.0\Gestionale.WebApp.csproj.AssemblyReference.cache
@@ -39,5 +43,3 @@ C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestio
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\obj\Debug\net10.0\Gestionale.WebApp.pdb
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\obj\Debug\net10.0\Gestionale.WebApp.genruntimeconfig.cache
 C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\obj\Debug\net10.0\ref\Gestionale.WebApp.dll
-C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\bin\Debug\net10.0\Gestionale.Shared.dll
-C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\bin\Debug\net10.0\Gestionale.Shared.pdb

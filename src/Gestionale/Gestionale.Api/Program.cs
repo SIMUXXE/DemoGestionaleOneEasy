@@ -1,10 +1,9 @@
 using Gestionale.Api.EndPoints;
 using Gestionale.Api.Extensions;
-using Gestionale.Api.Services.Implementations;
-using Gestionale.Api.Services.Interfaces;
+using Gestionale.Application.Services.Implementations;
+using Gestionale.Application.Services.Interfaces;
 using Gestionale.Infrastructure.Data;
 using Gestionale.Infrastructure.DI;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

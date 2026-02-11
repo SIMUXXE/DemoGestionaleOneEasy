@@ -1142,6 +1142,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Gestionale.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Gestionale.Domain": "1.0.0",
+          "Gestionale.Infrastructure": "1.0.0",
+          "Gestionale.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gestionale.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gestionale.Application.dll": {}
+        }
+      },
       "Gestionale.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -1170,6 +1185,9 @@
       "Gestionale.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Gestionale.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Gestionale.Shared.dll": {}
         },
@@ -3648,6 +3666,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Gestionale.Application/1.0.0": {
+      "type": "project",
+      "path": "../Gestionale.Application/Gestionale.Application.csproj",
+      "msbuildProject": "../Gestionale.Application/Gestionale.Application.csproj"
+    },
     "Gestionale.Domain/1.0.0": {
       "type": "project",
       "path": "../Gestionale.Domain/Gestionale.Domain.csproj",
@@ -3666,6 +3689,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Gestionale.Application >= 1.0.0",
       "Gestionale.Domain >= 1.0.0",
       "Gestionale.Infrastructure >= 1.0.0",
       "Gestionale.Shared >= 1.0.0",
@@ -3710,6 +3734,9 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
+            "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Application\\Gestionale.Application.csproj": {
+              "projectPath": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Application\\Gestionale.Application.csproj"
+            },
             "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Domain\\Gestionale.Domain.csproj": {
               "projectPath": "C:\\Users\\Simone\\source\\repos\\SIMUXXE\\DemoGestionaleOneEasy\\src\\Gestionale\\Gestionale.Domain\\Gestionale.Domain.csproj"
             },

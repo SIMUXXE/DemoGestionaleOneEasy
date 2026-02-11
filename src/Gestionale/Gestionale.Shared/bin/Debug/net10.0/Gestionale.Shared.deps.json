@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "Gestionale.Shared/1.0.0": {
+        "dependencies": {
+          "Gestionale.Domain": "1.0.0"
+        },
         "runtime": {
           "Gestionale.Shared.dll": {}
+        }
+      },
+      "Gestionale.Domain/1.0.0": {
+        "runtime": {
+          "Gestionale.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "Gestionale.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Gestionale.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

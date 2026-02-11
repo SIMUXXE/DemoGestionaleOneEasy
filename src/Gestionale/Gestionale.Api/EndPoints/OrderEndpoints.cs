@@ -1,6 +1,6 @@
-﻿using Gestionale.Shared.DTOs;
-using Gestionale.Api.Extensions;
-using Gestionale.Api.Services.Interfaces;
+﻿using Gestionale.Application.Services.Interfaces;
+using Gestionale.Shared.DTOs;
+using Gestionale.Shared.Extensions;
 
 namespace Gestionale.Api.EndPoints
 {
@@ -15,7 +15,7 @@ namespace Gestionale.Api.EndPoints
             orders.MapGet("/", async (IOrderService service) =>
             {
                 var list = await service.GetAllAsync();
-                return list.Select(o => o.ToDto());
+                return list;
             })
             .WithName("GetAllOrders")
             .WithTags("Orders");
@@ -23,8 +23,7 @@ namespace Gestionale.Api.EndPoints
             // GET: /api/orders/{id}
             orders.MapGet("/{id}", async (Guid id, IOrderService service) =>
             {
-                var o = await service.GetByIdAsync(id);
-                return o is null ? Results.NotFound() : Results.Ok(o.ToDto());
+                return await service.GetByIdAsync(id);
             })
             .WithName("GetOrderById")
             .WithTags("Orders");
@@ -32,33 +31,25 @@ namespace Gestionale.Api.EndPoints
             // GET: /api/orders/by-customer/{customerId}
             orders.MapGet("/by-customer/{customerId}", async (Guid customerId, IOrderService service) =>
             {
-                var list = await service.GetOrdersByCustomerIdAsync(customerId);
-                return list.Select(o => o.ToDto());
+                var list = await service.GetByCustomerIdAsync(customerId);
+                return list;
             })
             .WithName("GetOrdersByCustomer")
             .WithTags("Orders");
 
             // POST: /api/orders
-            orders.MapPost("/", async (OrderCreateDto dto, IOrderService service) =>
+            orders.MapPost("/", async (CreateOrderDto dto, IOrderService service) =>
             {
-                var order = dto.ToEntity();
-                await service.CreateAsync(order);
-                return Results.Created($"/api/orders/{order.Id}", order.ToDto());
+                await service.CreateAsync(dto);
+                return Results.Ok();
             })
             .WithName("CreateOrder")
             .WithTags("Orders");
 
             // PUT: /api/orders/{id}
-            orders.MapPut("/{id}", async (Guid id, OrderCreateDto dto, IOrderService service) =>
+            orders.MapPut("/{id}", async (Guid id, CreateOrderDto dto, IOrderService service) =>
             {
-                var o = await service.GetByIdAsync(id);
-                if (o is null) return Results.NotFound();
-
-                // Aggiorno campi modificabili
-                o.TotalAmount = dto.TotalAmount;
-                o.CustomerId = dto.CustomerId;
-
-                await service.UpdateAsync(o);
+                await service.UpdateAsync(id, dto);
                 return Results.NoContent();
             })
             .WithName("UpdateOrder")
@@ -67,8 +58,8 @@ namespace Gestionale.Api.EndPoints
             // DELETE: /api/orders/{id}
             orders.MapDelete("/{id}", async (Guid id, IOrderService service) =>
             {
-                var deleted = await service.DeleteAsync(id);
-                return deleted ? Results.NoContent() : Results.NotFound();
+                await service.DeleteAsync(id);
+                return Results.Ok(); 
             })
             .WithName("DeleteOrder")
             .WithTags("Orders");

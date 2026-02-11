@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Gestionale.Api.DTOs.CustomerDto, Gestionale.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Gestionale.Shared.DTOs.CustomerDto, Gestionale.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -31,7 +31,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Gestionale.Api.DTOs.CustomerCreateDto",
+        "Type": "Gestionale.Shared.DTOs.CreateCustomerDto",
         "IsRequired": true
       }
     ],
@@ -88,7 +88,7 @@
       },
       {
         "Name": "dto",
-        "Type": "Gestionale.Api.DTOs.CustomerCreateDto",
+        "Type": "Gestionale.Shared.DTOs.CreateCustomerDto",
         "IsRequired": true
       }
     ],
@@ -140,7 +140,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Gestionale.Api.DTOs.OrderDto, Gestionale.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Gestionale.Shared.DTOs.OrderDto, Gestionale.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -162,7 +162,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Gestionale.Api.DTOs.OrderCreateDto",
+        "Type": "Gestionale.Shared.DTOs.CreateOrderDto",
         "IsRequired": true
       }
     ],
@@ -194,8 +194,10 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Gestionale.Shared.DTOs.OrderDto",
+        "MediaTypes": [
+          "application/json"
+        ],
         "StatusCode": 200
       }
     ],
@@ -219,7 +221,7 @@
       },
       {
         "Name": "dto",
-        "Type": "Gestionale.Api.DTOs.OrderCreateDto",
+        "Type": "Gestionale.Shared.DTOs.CreateOrderDto",
         "IsRequired": true
       }
     ],
@@ -277,7 +279,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Gestionale.Api.DTOs.OrderDto, Gestionale.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Gestionale.Shared.DTOs.OrderDto, Gestionale.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],

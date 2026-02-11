@@ -1,4 +1,6 @@
 ﻿using Gestionale.Infrastructure.Data;
+using Gestionale.Infrastructure.Repositories.Implementations;
+using Gestionale.Infrastructure.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,6 +21,8 @@ namespace Gestionale.Infrastructure.DI
                     sql => sql.MigrationsAssembly("Gestionale.Infrastructure")
                 ));
 
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
             return services;
         }
     }

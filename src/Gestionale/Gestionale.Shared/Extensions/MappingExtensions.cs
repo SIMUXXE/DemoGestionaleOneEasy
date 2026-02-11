@@ -1,7 +1,7 @@
 ﻿using Gestionale.Shared.DTOs;
 using Gestionale.Domain.Entities;
 
-namespace Gestionale.Api.Extensions
+namespace Gestionale.Shared.Extensions
 {
     public static class MappingExtensions
     {
@@ -24,7 +24,7 @@ namespace Gestionale.Api.Extensions
             };
 
         // DTO → Entity
-        public static Customer ToEntity(this CustomerCreateDto dto) =>
+        public static Customer ToEntity(this CreateCustomerDto dto) =>
             new Customer
             {
                 Id = Guid.NewGuid(),
@@ -33,7 +33,7 @@ namespace Gestionale.Api.Extensions
                 Email = dto.Email
             };
 
-        public static Order ToEntity(this OrderCreateDto dto) =>
+        public static Order ToEntity(this CreateOrderDto dto) =>
             new Order
             {
                 Id = Guid.NewGuid(),

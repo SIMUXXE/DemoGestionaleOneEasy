@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "Gestionale.Api/1.0.0": {
         "dependencies": {
+          "Gestionale.Application": "1.0.0",
           "Gestionale.Domain": "1.0.0",
           "Gestionale.Infrastructure": "1.0.0",
           "Gestionale.Shared": "1.0.0",
@@ -808,6 +809,19 @@
           }
         }
       },
+      "Gestionale.Application/1.0.0": {
+        "dependencies": {
+          "Gestionale.Domain": "1.0.0",
+          "Gestionale.Infrastructure": "1.0.0",
+          "Gestionale.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Gestionale.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Gestionale.Domain/1.0.0": {
         "runtime": {
           "Gestionale.Domain.dll": {
@@ -830,6 +844,9 @@
         }
       },
       "Gestionale.Shared/1.0.0": {
+        "dependencies": {
+          "Gestionale.Domain": "1.0.0"
+        },
         "runtime": {
           "Gestionale.Shared.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -1187,6 +1204,11 @@
       "sha512": "sha512-o94k2RKuAce3GeDMlUvIXlhVa1kWpJw95E6C9LwW0KlG0nj5+SgCiIxJ2Eroqb9sLtG1mEMbFttZIBZ13EJPvQ==",
       "path": "system.security.cryptography.protecteddata/9.0.4",
       "hashPath": "system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
+    },
+    "Gestionale.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Gestionale.Domain/1.0.0": {
       "type": "project",

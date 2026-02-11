@@ -23,7 +23,18 @@
           }
         }
       },
+      "Gestionale.Domain/1.0.0": {
+        "runtime": {
+          "Gestionale.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Gestionale.Shared/1.0.0": {
+        "dependencies": {
+          "Gestionale.Domain": "1.0.0"
+        },
         "runtime": {
           "Gestionale.Shared.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -45,6 +56,11 @@
       "sha512": "sha512-iOJEnQ6tYGQPfPJaUazyC8H6pcczgaMX7vhUzrJPpB0WqEXNozwMfSzoOe2/JZmVWJcUfYZgKBeBU2Z27XY7Sw==",
       "path": "mudblazor/8.15.0",
       "hashPath": "mudblazor.8.15.0.nupkg.sha512"
+    },
+    "Gestionale.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Gestionale.Shared/1.0.0": {
       "type": "project",

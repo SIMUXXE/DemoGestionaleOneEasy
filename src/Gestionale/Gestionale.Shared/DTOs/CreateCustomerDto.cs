@@ -1,6 +1,6 @@
 ﻿namespace Gestionale.Shared.DTOs
 {
-    public class CustomerCreateDto
+    public class CreateCustomerDto
     {
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;

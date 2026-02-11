@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Gestionale.Application\Gestionale.Application.csproj" />
     <ProjectReference Include="..\Gestionale.Domain\Gestionale.Domain.csproj" />
     <ProjectReference Include="..\Gestionale.Infrastructure\Gestionale.Infrastructure.csproj" />
     <ProjectReference Include="..\Gestionale.Shared\Gestionale.Shared.csproj" />
