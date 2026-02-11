@@ -17,10 +17,11 @@ Realizzare una soluzione unica composta da:
 Tutti i progetti convivono nella stessa solution.
 
 ## Tecnologie utilizzate
-- .NET 8
+- .NET 10.0
+- .NET Framework 4.8.1
 - ASP.NET Core Minimal API
-- Blazor Server
-- WinForms (.NET Framework 4.8)
+- MudBlazor Server
+- WinForms (.NET Framework 4.8.1)
 - Entity Framework Core
 - SQL Server
 - Microsoft.Data.SqlClient
