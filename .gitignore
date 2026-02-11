@@ -1,3 +1,33 @@
+/src/Gestionale/Gestionale.Api/appsettings.json
+
+
 # Visual Studio
 .vs/
-/src/Gestionale/Gestionale.Api/appsettings.json
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+Debug/
+Release/
+
+# Rider
+.idea/
+
+# ASP.NET / Blazor
+wwwroot/_framework/
+wwwroot/_bin/
+
+# EF Migrations
+*.db
+
+# Resharper
+*.DotSettings.user
+
+# Others
+*.log
+*.vsix
+*.nupkg
