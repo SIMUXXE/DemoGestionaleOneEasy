@@ -1,2 +1,0 @@
-wwwroot\favicon.ico
-C:\Users\Simone\source\repos\SIMUXXE\DemoGestionaleOneEasy\src\Gestionale\Gestionale.WebApp\wwwroot\favicon.ico

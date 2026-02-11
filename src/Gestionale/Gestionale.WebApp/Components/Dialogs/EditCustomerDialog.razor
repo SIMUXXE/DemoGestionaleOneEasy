@@ -1,0 +1,103 @@
+﻿@namespace Gestionale.WebApp.Components.Dialogs
+
+<MudDialog>
+    <DialogContent>
+
+        <MudText Typo="Typo.h6" Class="mb-4">Edit Customer</MudText>
+
+        <EditForm @ref="_form" Model="_model" OnValidSubmit="OnValidSubmit">
+
+            <MudTextField T="string"
+                          Label="First Name"
+                          @bind-Value="_model.FirstName"
+                          Required="true"
+                          RequiredError="First name is required"
+                          Variant="Variant.Outlined"
+                          Class="mb-3" />
+
+            <MudTextField T="string"
+                          Label="Last Name"
+                          @bind-Value="_model.LastName"
+                          Required="true"
+                          RequiredError="Last name is required"
+                          Variant="Variant.Outlined"
+                          Class="mb-3" />
+
+            <MudTextField T="string"
+                          Label="Email"
+                          @bind-Value="_model.Email"
+                          Required="true"
+                          RequiredError="Email is required"
+                          Variant="Variant.Outlined"
+                          Class="mb-3" />
+
+        </EditForm>
+
+    </DialogContent>
+
+    <DialogActions>
+        <MudButton Variant="Variant.Text" Color="Color.Secondary" OnClick="Cancel">
+            Cancel
+        </MudButton>
+
+        <MudButton Variant="Variant.Filled"
+                   Color="Color.Primary"
+                   Disabled="_isLoading">
+            @_submitText
+        </MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter] IMudDialogInstance MudDialog { get; set; } = default!;
+
+    [Parameter] public CustomerDto Customer { get; set; } = default!;
+    [Inject] private IApiClient ApiClient { get; set; } = default!;
+    [Inject] private ISnackbar Snackbar { get; set; } = default!;
+
+    private EditForm? _form;
+    private bool _isLoading = false;
+    private string _submitText => _isLoading ? "Saving..." : "Save";
+
+    private CreateCustomerDto _model = new();
+
+    protected override void OnParametersSet()
+    {
+        string fullName = Customer.FullName;
+        var parts = fullName.Trim().Split(' ', 2);
+
+        string firstName = parts.Length > 0 ? parts[0] : string.Empty;
+        string lastName = parts.Length > 1 ? parts[1] : string.Empty;
+
+        _model.FirstName = firstName ;
+        _model.LastName = lastName;
+        _model.Email = Customer.Email;
+    }
+
+    private void Cancel()
+    {
+        MudDialog.Cancel();
+    }
+
+
+    private async Task OnValidSubmit()
+    {
+        try
+        {
+            _isLoading = true;
+
+            await ApiClient.PutAsync<CreateCustomerDto>("customers", Customer.Id, _model);
+
+            Snackbar.Add("Customer updated successfully!", Severity.Success);
+            MudDialog.Close(DialogResult.Ok(true));
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Error: {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _isLoading = false;
+        }
+    }
+}

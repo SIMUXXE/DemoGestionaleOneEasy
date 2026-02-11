@@ -27,7 +27,7 @@
                     <MudTd>@context.FullName</MudTd>
                     <MudTd>@context.Email</MudTd>
                     <MudTd>
-                        <MudButton Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" StartIcon="@Icons.Material.Filled.Edit">
+                        <MudButton Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" StartIcon="@Icons.Material.Filled.Edit" OnClick="@(() => OpenEditCustomerDialog(context))">
                             Edit
                         </MudButton>
                         <MudButton Variant="Variant.Outlined" Color="Color.Error" Size="Size.Small" StartIcon="@Icons.Material.Filled.Delete" Class="ml-2" OnClick="@(async(e) => await DeleteCustomer(context.Id))">
@@ -88,6 +88,20 @@
                 _snackbar.Add($"Error deleting customer: {ex.Message}", Severity.Error);
             }
         }
+    }
+
+    private async Task OpenEditCustomerDialog(CustomerDto customer)
+    {
+        var parameters = new DialogParameters
+        {
+            { "Customer", customer }
+        };
+
+        var options = new DialogOptions { MaxWidth = MaxWidth.Small, CloseButton = true };
+
+        var dialog = await _dialogService.ShowAsync<EditCustomerDialog>("Edit Customer", parameters);
+        var result = dialog.Result;
+
     }
 
 }
