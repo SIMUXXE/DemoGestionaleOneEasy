@@ -1,0 +1,105 @@
+﻿@page "/create-order"
+
+<MudContainer MaxWidth="MaxWidth.Small" Class="mt-6">
+
+    <MudPaper Elevation="3" Class="pa-6">
+
+        <MudText Typo="Typo.h5" Class="mb-4">
+            Create New Order
+        </MudText>
+
+        <EditForm @ref="_form" Model="_model" OnValidSubmit="OnValidSubmit">
+
+            <!-- Order Date -->
+            <MudDatePicker T="DateTime?"
+                           Label="Order Date"
+                           @bind-Date="_orderDate"
+                           Required="true"
+                           RequiredError="Order date is required"
+                           Variant="Variant.Outlined"
+                           Class="mb-3" />
+
+            <!-- Total Amount -->
+            <MudNumericField T="decimal"
+                             Label="Total Amount"
+                             @bind-Value="_model.TotalAmount"
+                             Required="true"
+                             RequiredError="Total amount is required"
+                             Variant="Variant.Outlined"
+                             Class="mb-3"
+                             Adornment="Adornment.Start"
+                             AdornmentText="€" />
+
+            <!-- Customer Id -->
+            <MudTextField T="string"
+                          Label="Customer Id"
+                          @bind-Value="_customerId"
+                          Required="true"
+                          RequiredError="Customer Id is required"
+                          Variant="Variant.Outlined"
+                          Class="mb-4" />
+
+            <MudStack Row="true" Spacing="2" Justify="Justify.FlexEnd">
+
+                <MudButton Variant="Variant.Text"
+                           Color="Color.Secondary"
+                           OnClick="@(() => _navManager.NavigateTo("/order-list"))">
+                    Cancel
+                </MudButton>
+
+                <MudButton ButtonType="ButtonType.Submit"
+                           Variant="Variant.Outlined"
+                           Color="Color.Primary"
+                           Disabled="_isLoading">
+                    @_submitText
+                </MudButton>
+
+            </MudStack>
+
+        </EditForm>
+
+    </MudPaper>
+
+</MudContainer>
+
+@code {
+
+    private EditForm? _form;
+    private bool _isLoading = false;
+
+    private string _submitText => _isLoading ? "Creating..." : "Create";
+
+    private CreateOrderDto _model = new();
+
+    // Support fields
+    private DateTime? _orderDate = DateTime.Today;
+    private string? _customerId;
+
+    private async Task OnValidSubmit()
+    {
+        if (_form is null)
+            return;
+
+        try
+        {
+            _isLoading = true;
+
+            _model.OrderDate = _orderDate ?? DateTime.UtcNow;
+            _model.CustomerId = Guid.Parse(_customerId!);
+
+            await _apiClient.PostAsync<CreateOrderDto, OrderDto>("orders", _model);
+
+            _snackbar.Add("Order created successfully!", Severity.Success);
+
+            _navManager.NavigateTo("/orders-list");
+        }
+        catch (Exception ex)
+        {
+            _snackbar.Add($"Error: {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _isLoading = false;
+        }
+    }
+}

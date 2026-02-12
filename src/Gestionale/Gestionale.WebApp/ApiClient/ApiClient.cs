@@ -41,6 +41,9 @@
             var response = await _httpClient.PostAsJsonAsync(endpoint, data, _jsonOptions);
             await EnsureSuccess(response);
 
+            if (response.Content.Headers.ContentLength == 0)
+                return default;
+
             return await response.Content.ReadFromJsonAsync<TResponse>(_jsonOptions);
         }
 

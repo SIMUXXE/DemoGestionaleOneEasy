@@ -99,9 +99,7 @@
 
         var options = new DialogOptions { MaxWidth = MaxWidth.Small, CloseButton = true };
 
-        var dialog = await _dialogService.ShowAsync<EditCustomerDialog>("Edit Customer", parameters);
-        var result = dialog.Result;
-
+        await _dialogService.ShowAsync<EditCustomerDialog>("Edit Customer", parameters);
     }
 
 }

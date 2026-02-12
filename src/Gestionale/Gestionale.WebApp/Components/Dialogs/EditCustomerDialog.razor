@@ -40,9 +40,11 @@
             Cancel
         </MudButton>
 
-        <MudButton Variant="Variant.Filled"
+        <MudButton Variant="Variant.Outlined"
                    Color="Color.Primary"
-                   Disabled="_isLoading">
+                   Disabled="_isLoading"
+                   ButtonType="ButtonType.Submit"
+                   OnClick="OnValidSubmit">
             @_submitText
         </MudButton>
     </DialogActions>
@@ -87,9 +89,9 @@
             _isLoading = true;
 
             await ApiClient.PutAsync<CreateCustomerDto>("customers", Customer.Id, _model);
-
             Snackbar.Add("Customer updated successfully!", Severity.Success);
             MudDialog.Close(DialogResult.Ok(true));
+            _navManager.NavigateTo("/customer-list", forceLoad:true);
         }
         catch (Exception ex)
         {
