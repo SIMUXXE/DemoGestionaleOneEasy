@@ -21,6 +21,7 @@
                     <MudTh>Customer Id</MudTh>
                     <MudTh>Date</MudTh>
                     <MudTh>Total</MudTh>
+                    <MudTh>Actions</MudTh>
                 </HeaderContent>
 
                 <RowTemplate>
@@ -28,6 +29,14 @@
                     <MudTd>@context.CustomerId</MudTd>
                     <MudTd>@context.OrderDate.ToShortDateString()</MudTd>
                     <MudTd>@context.TotalAmount.ToString("C")</MudTd>
+                    <MudTd>
+                        <MudButton Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" StartIcon="@Icons.Material.Filled.Edit" OnClick="@(() => OpenEditOrderDialog(context))">
+                            Edit
+                        </MudButton>
+                        <MudButton Variant="Variant.Outlined" Color="Color.Error" Size="Size.Small" StartIcon="@Icons.Material.Filled.Delete" Class="ml-2" OnClick="@(async (e) => await DeleteOrder(context.Id))">
+                            Delete
+                        </MudButton>
+                    </MudTd>
                 </RowTemplate>
 
             </MudTable>
@@ -57,4 +66,43 @@
             _loading = false;
         }
     }
+
+    private async Task DeleteOrder(Guid customerId)
+    {
+        var dialogTitle = "Confirm Delete";
+        var dialogMessage = "Are you sure you want to delete this Order?";
+        var yesText = "Confirm";
+        var cancelText = "Cancel";
+
+        bool? confirm = await _dialogService.ShowMessageBox(dialogTitle, dialogMessage, yesText: yesText, cancelText: cancelText);
+
+        if (confirm == true)
+        {
+            try
+            {
+                await _apiClient.DeleteAsync("orders", customerId);
+                _orders.RemoveAll(c => c.Id == customerId);
+                StateHasChanged();
+                _snackbar.Add("Order deleted successfully", Severity.Success);
+            }
+            catch (Exception ex)
+            {
+                _snackbar.Add($"Error deleting customer: {ex.Message}", Severity.Error);
+            }
+        }
+    }
+
+
+    private async Task OpenEditOrderDialog(OrderDto order)
+    {
+        var parameters = new DialogParameters
+        {
+            { "Order", order}
+        };
+
+        var options = new DialogOptions { MaxWidth = MaxWidth.Small, CloseButton = true };
+
+        await _dialogService.ShowAsync<EditOrderDialog>("Edit Order", parameters);
+    }
+
 }

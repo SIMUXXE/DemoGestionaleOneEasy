@@ -150,7 +150,7 @@
             _totalOrders = orders.Count;
             _totalRevenue = orders.Sum(o => o.TotalAmount);
 
-            _lastCustomer = customers.FirstOrDefault();
+            _lastCustomer = customers.OrderByDescending(c => c.CreationDate).FirstOrDefault();
             _lastOrder = orders.OrderByDescending(o => o.OrderDate).FirstOrDefault();
             _highestOrder = orders.OrderByDescending(o => o.TotalAmount).FirstOrDefault();
         }

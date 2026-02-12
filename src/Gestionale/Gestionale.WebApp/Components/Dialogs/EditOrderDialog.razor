@@ -1,0 +1,118 @@
+﻿@namespace Gestionale.WebApp.Components.Dialogs
+
+<MudDialog>
+    <DialogContent>
+
+        <MudText Typo="Typo.h6" Class="mb-4">Edit Order</MudText>
+
+        <EditForm @ref="_form" Model="_model" OnValidSubmit="OnValidSubmit">
+
+            <MudDatePicker Label="Order Date"
+                           @bind-Value="_orderDate"
+                           Required="true"
+                           RequiredError="Order date is required"
+                           Variant="Variant.Outlined"
+                           Class="mb-3" />
+
+            <MudNumericField T="decimal"
+                             Label="Total Amount"
+                             @bind-Value="_totalAmount"
+                             Required="true"
+                             RequiredError="Total amount is required"
+                             Variant="Variant.Outlined"
+                             Class="mb-3"
+                             Adornment="Adornment.Start"
+                             AdornmentText="€" />
+
+            <MudTextField T="Guid"
+                          Label="Customer Id"
+                          @bind-Value="_model.CustomerId"
+                          Required="true"
+                          RequiredError="Customer Id is required"
+                          Variant="Variant.Outlined"
+                          Disabled="true"
+                          Class="mb-3" />
+
+        </EditForm>
+
+    </DialogContent>
+
+    <DialogActions>
+
+        <MudButton Variant="Variant.Text"
+                   Color="Color.Secondary"
+                   OnClick="Cancel">
+            Cancel
+        </MudButton>
+
+        <MudButton Variant="Variant.Outlined"
+                   Color="Color.Primary"
+                   Disabled="_isLoading"
+                   ButtonType="ButtonType.Submit"
+                   OnClick="OnValidSubmit">
+            @_submitText
+        </MudButton>
+
+    </DialogActions>
+</MudDialog>
+
+@code {
+
+    [CascadingParameter] IMudDialogInstance MudDialog { get; set; } = default!;
+
+    [Parameter] public OrderDto Order { get; set; } = default!;
+
+    private EditForm? _form;
+    private bool _isLoading = false;
+    private string _submitText => _isLoading ? "Saving..." : "Save";
+    private decimal _totalAmount;
+    private DateTime _orderDate;
+    private CreateOrderDto _model = new();
+
+    protected override void OnParametersSet()
+    {
+        if (Order is null)
+            return;
+
+        _orderDate = Order.OrderDate;
+        _totalAmount = Order.TotalAmount;
+        _model.CustomerId = Order.CustomerId;
+
+    }
+
+    private void Cancel()
+    {
+        MudDialog.Cancel();
+    }
+
+    private async Task OnValidSubmit()
+    {
+        try
+        {
+            _isLoading = true;
+
+            _model = new CreateOrderDto
+            {
+                OrderDate = _orderDate,
+                TotalAmount = _totalAmount,
+                CustomerId = Order.CustomerId
+            };
+
+            await _apiClient.PutAsync<CreateOrderDto>("orders", Order.Id, _model);
+
+            _snackbar.Add("Order updated successfully!", Severity.Success);
+
+            MudDialog.Close(DialogResult.Ok(true));
+
+            _navManager.NavigateTo("/orders-list", forceLoad: true);
+        }
+        catch (Exception ex)
+        {
+            _snackbar.Add($"Error: {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _isLoading = false;
+        }
+    }
+}
