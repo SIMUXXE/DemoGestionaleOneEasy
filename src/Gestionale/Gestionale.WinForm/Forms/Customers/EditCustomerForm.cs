@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Gestionale.WinForm
+namespace Gestionale.WinForm.Forms.Customers
 {
-    public partial class Form1 : Form
+    public partial class EditCustomerForm : Form
     {
-        public Form1()
+        public EditCustomerForm()
         {
             InitializeComponent();
         }
