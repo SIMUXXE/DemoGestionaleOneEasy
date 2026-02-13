@@ -1,5 +1,4 @@
-﻿using Gestionale.WinForm.Forms;
-using Gestionale.WinForm.Models;
+﻿using Gestionale.WinForm.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +17,7 @@ namespace Gestionale.WinForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomerForm());
+            Application.Run(new MainForm());
         }
     }
 }

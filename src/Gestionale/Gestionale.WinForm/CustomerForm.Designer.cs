@@ -1,4 +1,4 @@
-﻿namespace Gestionale.WinForm.Forms
+﻿namespace Gestionale.WinForm
 {
     partial class CustomerForm
     {
