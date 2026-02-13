@@ -6,17 +6,17 @@ La soluzione è strutturata seguendo un approccio **Clean Architecture semplific
 
 src/
 Backend/
-DemoGestionale.Api
-DemoGestionale.Application
-DemoGestionale.Domain
-DemoGestionale.Infrastructure
+Gestionale.Api
+Gestionale.Application
+Gestionale.Domain
+Gestionale.Infrastructure
 
 Frontends/
-DemoGestionale.BlazorServer
-DemoGestionale.WinForms
+Gestionale.Webapp (Mudblazor Server)
+Gestionale.WinForms
 
 Shared/
-DemoGestionale.Contracts
+Gestionale.Shared
 
 
 ## Backend
@@ -53,7 +53,7 @@ Espone le funzionalità tramite REST API:
 
 La logica di business non è contenuta negli endpoint.
 
-## Shared – Contracts
+## Shared
 Contiene i DTO condivisi tra:
 - Backend API
 - Frontend Blazor Server
