@@ -15,7 +15,7 @@ namespace Gestionale.WinForm
     {
         // User Controls
         private CustomerListControl _customerListControl;
-
+        private CreateUserControl _createUserControl;
         public MainForm()
         {
             InitializeComponent();
@@ -37,6 +37,14 @@ namespace Gestionale.WinForm
 
             LoadControl(_customerListControl);
 
+        }
+
+        private void buttonCreateCustomer_Click(object sender, EventArgs e)
+        {
+            if (_createUserControl == null)
+                _createUserControl = new CreateUserControl();
+
+            LoadControl(_createUserControl);
         }
     }
 }

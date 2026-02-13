@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.pnlSidebar = new System.Windows.Forms.Panel();
-            this.pnlContent = new System.Windows.Forms.Panel();
-            this.buttonCreateCustomer = new System.Windows.Forms.Button();
-            this.buttonCustomerList = new System.Windows.Forms.Button();
-            this.buttonCreateOrder = new System.Windows.Forms.Button();
             this.buttonOrderList = new System.Windows.Forms.Button();
+            this.buttonCreateOrder = new System.Windows.Forms.Button();
+            this.buttonCustomerList = new System.Windows.Forms.Button();
+            this.buttonCreateCustomer = new System.Windows.Forms.Button();
+            this.pnlContent = new System.Windows.Forms.Panel();
             this.pnlSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,24 +50,25 @@
             this.pnlSidebar.Size = new System.Drawing.Size(160, 450);
             this.pnlSidebar.TabIndex = 0;
             // 
-            // pnlContent
+            // buttonOrderList
             // 
-            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(160, 0);
-            this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(640, 450);
-            this.pnlContent.TabIndex = 1;
+            this.buttonOrderList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonOrderList.Location = new System.Drawing.Point(0, 120);
+            this.buttonOrderList.Name = "buttonOrderList";
+            this.buttonOrderList.Size = new System.Drawing.Size(160, 40);
+            this.buttonOrderList.TabIndex = 3;
+            this.buttonOrderList.Text = "OrderList";
+            this.buttonOrderList.UseVisualStyleBackColor = true;
             // 
-            // buttonCreateCustomer
+            // buttonCreateOrder
             // 
-            this.buttonCreateCustomer.AutoSize = true;
-            this.buttonCreateCustomer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonCreateCustomer.Location = new System.Drawing.Point(0, 0);
-            this.buttonCreateCustomer.Name = "buttonCreateCustomer";
-            this.buttonCreateCustomer.Size = new System.Drawing.Size(160, 40);
-            this.buttonCreateCustomer.TabIndex = 0;
-            this.buttonCreateCustomer.Text = "CreateCustomer";
-            this.buttonCreateCustomer.UseVisualStyleBackColor = true;
+            this.buttonCreateOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonCreateOrder.Location = new System.Drawing.Point(0, 80);
+            this.buttonCreateOrder.Name = "buttonCreateOrder";
+            this.buttonCreateOrder.Size = new System.Drawing.Size(160, 40);
+            this.buttonCreateOrder.TabIndex = 2;
+            this.buttonCreateOrder.Text = "Create Order";
+            this.buttonCreateOrder.UseVisualStyleBackColor = true;
             // 
             // buttonCustomerList
             // 
@@ -80,25 +81,25 @@
             this.buttonCustomerList.UseVisualStyleBackColor = true;
             this.buttonCustomerList.Click += new System.EventHandler(this.buttonCustomerList_Click_1);
             // 
-            // buttonCreateOrder
+            // buttonCreateCustomer
             // 
-            this.buttonCreateOrder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonCreateOrder.Location = new System.Drawing.Point(0, 80);
-            this.buttonCreateOrder.Name = "buttonCreateOrder";
-            this.buttonCreateOrder.Size = new System.Drawing.Size(160, 40);
-            this.buttonCreateOrder.TabIndex = 2;
-            this.buttonCreateOrder.Text = "Create Order";
-            this.buttonCreateOrder.UseVisualStyleBackColor = true;
+            this.buttonCreateCustomer.AutoSize = true;
+            this.buttonCreateCustomer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonCreateCustomer.Location = new System.Drawing.Point(0, 0);
+            this.buttonCreateCustomer.Name = "buttonCreateCustomer";
+            this.buttonCreateCustomer.Size = new System.Drawing.Size(160, 40);
+            this.buttonCreateCustomer.TabIndex = 0;
+            this.buttonCreateCustomer.Text = "CreateCustomer";
+            this.buttonCreateCustomer.UseVisualStyleBackColor = true;
+            this.buttonCreateCustomer.Click += new System.EventHandler(this.buttonCreateCustomer_Click);
             // 
-            // buttonOrderList
+            // pnlContent
             // 
-            this.buttonOrderList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonOrderList.Location = new System.Drawing.Point(0, 120);
-            this.buttonOrderList.Name = "buttonOrderList";
-            this.buttonOrderList.Size = new System.Drawing.Size(160, 40);
-            this.buttonOrderList.TabIndex = 3;
-            this.buttonOrderList.Text = "OrderList";
-            this.buttonOrderList.UseVisualStyleBackColor = true;
+            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContent.Location = new System.Drawing.Point(160, 0);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(640, 450);
+            this.pnlContent.TabIndex = 1;
             // 
             // MainForm
             // 
@@ -109,7 +110,7 @@
             this.Controls.Add(this.pnlSidebar);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
+            this.Text = "Demo Gestionale";
             this.pnlSidebar.ResumeLayout(false);
             this.pnlSidebar.PerformLayout();
             this.ResumeLayout(false);
