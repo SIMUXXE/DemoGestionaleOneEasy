@@ -175,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\DbHelper.cs" />
+    <Compile Include="Helpers\Uitls.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,11 +188,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CustomerRepository.cs" />
     <Compile Include="Repositories\OrdersRepository.cs" />
-    <Compile Include="UserControls\CreateUserControl.cs">
+    <Compile Include="UserControls\CreateCustomerControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\CreateUserControl.Designer.cs">
-      <DependentUpon>CreateUserControl.cs</DependentUpon>
+    <Compile Include="UserControls\CreateCustomerControl.Designer.cs">
+      <DependentUpon>CreateCustomerControl.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\CustomerListControl.cs">
       <SubType>UserControl</SubType>
@@ -211,8 +212,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControls\CreateUserControl.resx">
-      <DependentUpon>CreateUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\CreateCustomerControl.resx">
+      <DependentUpon>CreateCustomerControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CustomerListControl.resx">
       <DependentUpon>CustomerListControl.cs</DependentUpon>

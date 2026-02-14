@@ -1,6 +1,6 @@
 ﻿namespace Gestionale.WinForm.UserControls
 {
-    partial class CreateUserControl
+    partial class CreateCustomerControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -41,7 +41,7 @@
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(336, 198);
+            this.textBoxFirstName.Location = new System.Drawing.Point(102, 68);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(242, 20);
             this.textBoxFirstName.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             this.labelFirstName.AutoSize = true;
             this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFirstName.Location = new System.Drawing.Point(248, 196);
+            this.labelFirstName.Location = new System.Drawing.Point(14, 66);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(84, 20);
             this.labelFirstName.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             this.labelLastName.AutoSize = true;
             this.labelLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLastName.Location = new System.Drawing.Point(248, 226);
+            this.labelLastName.Location = new System.Drawing.Point(14, 96);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(84, 20);
             this.labelLastName.TabIndex = 3;
@@ -68,7 +68,7 @@
             // 
             // textBoxLastName
             // 
-            this.textBoxLastName.Location = new System.Drawing.Point(336, 228);
+            this.textBoxLastName.Location = new System.Drawing.Point(102, 98);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(242, 20);
             this.textBoxLastName.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(248, 143);
+            this.labelTitle.Location = new System.Drawing.Point(14, 13);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(188, 20);
             this.labelTitle.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(248, 252);
+            this.labelEmail.Location = new System.Drawing.Point(14, 122);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(48, 20);
             this.labelEmail.TabIndex = 6;
@@ -96,7 +96,7 @@
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(336, 254);
+            this.textBoxEmail.Location = new System.Drawing.Point(102, 124);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(242, 20);
             this.textBoxEmail.TabIndex = 5;
@@ -104,7 +104,7 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(503, 308);
+            this.buttonSave.Location = new System.Drawing.Point(269, 178);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 7;
@@ -114,7 +114,7 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(257, 308);
+            this.buttonClear.Location = new System.Drawing.Point(23, 178);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 8;
@@ -122,7 +122,7 @@
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
-            // CreateUserControl
+            // CreateCustomerControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,7 +135,7 @@
             this.Controls.Add(this.textBoxLastName);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.textBoxFirstName);
-            this.Name = "CreateUserControl";
+            this.Name = "CreateCustomerControl";
             this.Size = new System.Drawing.Size(874, 566);
             this.ResumeLayout(false);
             this.PerformLayout();

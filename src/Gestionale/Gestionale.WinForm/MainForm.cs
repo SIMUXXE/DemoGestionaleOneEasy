@@ -1,4 +1,6 @@
-﻿using Gestionale.WinForm.UserControls;
+﻿using Gestionale.WinForm.Helpers;
+using Gestionale.WinForm.Models;
+using Gestionale.WinForm.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +17,8 @@ namespace Gestionale.WinForm
     {
         // User Controls
         private CustomerListControl _customerListControl;
-        private CreateUserControl _createUserControl;
+        private CreateCustomerControl _createUserControl;
+        private CreateCustomerControl _editUserControl;
         public MainForm()
         {
             InitializeComponent();
@@ -25,6 +28,12 @@ namespace Gestionale.WinForm
         private void LoadControl(UserControl control)
         {
             pnlContent.Controls.Clear();
+
+            if (control is CustomerListControl customerList)
+            {
+                customerList.EditCustomerRequested += Control_EditCustomerRequested;
+            }
+
             control.Dock = DockStyle.Fill;
             pnlContent.Controls.Add(control);
         }
@@ -42,9 +51,17 @@ namespace Gestionale.WinForm
         private void buttonCreateCustomer_Click(object sender, EventArgs e)
         {
             if (_createUserControl == null)
-                _createUserControl = new CreateUserControl();
+                _createUserControl = new CreateCustomerControl(Helpers.Uitls.Operations.Create);
 
             LoadControl(_createUserControl);
         }
+
+        private void Control_EditCustomerRequested(object sender, Customer customer)
+        {
+            if(_editUserControl == null)
+                _editUserControl = new CreateCustomerControl(Helpers.Uitls.Operations.Edit, customer);
+            LoadControl(_editUserControl);
+        }
+
     }
 }
