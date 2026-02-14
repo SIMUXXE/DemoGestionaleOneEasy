@@ -19,6 +19,10 @@ namespace Gestionale.WinForm
         private CustomerListControl _customerListControl;
         private CreateCustomerControl _createUserControl;
         private CreateCustomerControl _editUserControl;
+
+        private OrderListControl _orderListControl;
+        private CreateOrderControl _createOrderControl;
+        private CreateOrderControl _editOrderControl;
         public MainForm()
         {
             InitializeComponent();
@@ -33,7 +37,8 @@ namespace Gestionale.WinForm
             {
                 customerList.EditCustomerRequested += Control_EditCustomerRequested;
             }
-
+            if(control is OrderListControl orderList)
+                orderList.EditOrderRequested += OrderList_EditOrderRequested;
             control.Dock = DockStyle.Fill;
             pnlContent.Controls.Add(control);
         }
@@ -63,5 +68,27 @@ namespace Gestionale.WinForm
             LoadControl(_editUserControl);
         }
 
+        private void OrderList_EditOrderRequested(object sender, Order order)
+        {
+            if(_editOrderControl == null)
+                _editOrderControl = new CreateOrderControl(Helpers.Uitls.Operations.Edit, order);
+
+            LoadControl(_editOrderControl);
+        }
+
+        private void buttonOrderList_Click(object sender, EventArgs e)
+        {
+            if(_orderListControl == null)
+                _orderListControl = new OrderListControl();
+
+            LoadControl(_orderListControl);
+        }
+
+        private void buttonCreateOrder_Click(object sender, EventArgs e)
+        {
+            if(_createOrderControl == null)
+                _createOrderControl = new CreateOrderControl(Helpers.Uitls.Operations.Create);
+            LoadControl(_createOrderControl);
+        }
     }
 }

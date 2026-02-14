@@ -194,11 +194,23 @@
     <Compile Include="UserControls\CreateCustomerControl.Designer.cs">
       <DependentUpon>CreateCustomerControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\CreateOrderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CreateOrderControl.Designer.cs">
+      <DependentUpon>CreateOrderControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\CustomerListControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\CustomerListControl.Designer.cs">
       <DependentUpon>CustomerListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OrderListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OrderListControl.Designer.cs">
+      <DependentUpon>OrderListControl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -215,8 +227,14 @@
     <EmbeddedResource Include="UserControls\CreateCustomerControl.resx">
       <DependentUpon>CreateCustomerControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CreateOrderControl.resx">
+      <DependentUpon>CreateOrderControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CustomerListControl.resx">
       <DependentUpon>CustomerListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OrderListControl.resx">
+      <DependentUpon>OrderListControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

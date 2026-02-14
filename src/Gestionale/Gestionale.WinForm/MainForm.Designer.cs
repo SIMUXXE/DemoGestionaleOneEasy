@@ -59,6 +59,7 @@
             this.buttonOrderList.TabIndex = 3;
             this.buttonOrderList.Text = "OrderList";
             this.buttonOrderList.UseVisualStyleBackColor = true;
+            this.buttonOrderList.Click += new System.EventHandler(this.buttonOrderList_Click);
             // 
             // buttonCreateOrder
             // 
@@ -69,6 +70,7 @@
             this.buttonCreateOrder.TabIndex = 2;
             this.buttonCreateOrder.Text = "Create Order";
             this.buttonCreateOrder.UseVisualStyleBackColor = true;
+            this.buttonCreateOrder.Click += new System.EventHandler(this.buttonCreateOrder_Click);
             // 
             // buttonCustomerList
             // 
