@@ -17,12 +17,12 @@ namespace Gestionale.WinForm
     {
         // User Controls
         private CustomerListControl _customerListControl;
-        private CreateCustomerControl _createUserControl;
-        private CreateCustomerControl _editUserControl;
+        private CustomerEditForm _createUserControl;
+        private CustomerEditForm _editUserControl;
 
         private OrderListControl _orderListControl;
-        private CreateOrderControl _createOrderControl;
-        private CreateOrderControl _editOrderControl;
+        private OrderEditForm _createOrderControl;
+        private OrderEditForm _editOrderControl;
         public MainForm()
         {
             InitializeComponent();
@@ -34,11 +34,11 @@ namespace Gestionale.WinForm
             pnlContent.Controls.Clear();
 
             if (control is CustomerListControl customerList)
-            {
                 customerList.EditCustomerRequested += Control_EditCustomerRequested;
-            }
+
             if(control is OrderListControl orderList)
                 orderList.EditOrderRequested += OrderList_EditOrderRequested;
+
             control.Dock = DockStyle.Fill;
             pnlContent.Controls.Add(control);
         }
@@ -50,13 +50,12 @@ namespace Gestionale.WinForm
                 _customerListControl = new CustomerListControl();
 
             LoadControl(_customerListControl);
-
         }
 
         private void buttonCreateCustomer_Click(object sender, EventArgs e)
         {
             if (_createUserControl == null)
-                _createUserControl = new CreateCustomerControl(Helpers.Uitls.Operations.Create);
+                _createUserControl = new CustomerEditForm(Helpers.Uitls.Operations.Create);
 
             LoadControl(_createUserControl);
         }
@@ -64,14 +63,14 @@ namespace Gestionale.WinForm
         private void Control_EditCustomerRequested(object sender, Customer customer)
         {
             if(_editUserControl == null)
-                _editUserControl = new CreateCustomerControl(Helpers.Uitls.Operations.Edit, customer);
+                _editUserControl = new CustomerEditForm(Helpers.Uitls.Operations.Edit, customer);
             LoadControl(_editUserControl);
         }
 
         private void OrderList_EditOrderRequested(object sender, Order order)
         {
             if(_editOrderControl == null)
-                _editOrderControl = new CreateOrderControl(Helpers.Uitls.Operations.Edit, order);
+                _editOrderControl = new OrderEditForm(Helpers.Uitls.Operations.Edit, order);
 
             LoadControl(_editOrderControl);
         }
@@ -87,7 +86,8 @@ namespace Gestionale.WinForm
         private void buttonCreateOrder_Click(object sender, EventArgs e)
         {
             if(_createOrderControl == null)
-                _createOrderControl = new CreateOrderControl(Helpers.Uitls.Operations.Create);
+                _createOrderControl = new OrderEditForm(Helpers.Uitls.Operations.Create);
+
             LoadControl(_createOrderControl);
         }
     }

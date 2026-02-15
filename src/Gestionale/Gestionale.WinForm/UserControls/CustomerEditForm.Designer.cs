@@ -1,6 +1,6 @@
 ﻿namespace Gestionale.WinForm.UserControls
 {
-    partial class CreateCustomerControl
+    partial class CustomerEditForm
     {
         /// <summary> 
         /// Required designer variable.

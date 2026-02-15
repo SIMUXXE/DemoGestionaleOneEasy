@@ -188,17 +188,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CustomerRepository.cs" />
     <Compile Include="Repositories\OrdersRepository.cs" />
-    <Compile Include="UserControls\CreateCustomerControl.cs">
+    <Compile Include="UserControls\CustomerEditForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\CreateCustomerControl.Designer.cs">
-      <DependentUpon>CreateCustomerControl.cs</DependentUpon>
+    <Compile Include="UserControls\CustomerEditForm.Designer.cs">
+      <DependentUpon>CustomerEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\CreateOrderControl.cs">
+    <Compile Include="UserControls\OrderEditForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\CreateOrderControl.Designer.cs">
-      <DependentUpon>CreateOrderControl.cs</DependentUpon>
+    <Compile Include="UserControls\OrderEditForm.Designer.cs">
+      <DependentUpon>OrderEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\CustomerListControl.cs">
       <SubType>UserControl</SubType>
@@ -224,11 +224,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControls\CreateCustomerControl.resx">
-      <DependentUpon>CreateCustomerControl.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\CustomerEditForm.resx">
+      <DependentUpon>CustomerEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\CreateOrderControl.resx">
-      <DependentUpon>CreateOrderControl.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\OrderEditForm.resx">
+      <DependentUpon>OrderEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CustomerListControl.resx">
       <DependentUpon>CustomerListControl.cs</DependentUpon>

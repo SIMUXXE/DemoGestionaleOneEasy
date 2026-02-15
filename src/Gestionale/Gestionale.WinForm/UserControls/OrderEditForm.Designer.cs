@@ -1,6 +1,6 @@
 ﻿namespace Gestionale.WinForm.UserControls
 {
-    partial class CreateOrderControl
+    partial class OrderEditForm
     {
         /// <summary> 
         /// Required designer variable.

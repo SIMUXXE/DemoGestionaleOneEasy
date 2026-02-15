@@ -13,14 +13,14 @@ using System.Windows.Forms;
 
 namespace Gestionale.WinForm.UserControls
 {
-    public partial class CreateOrderControl : UserControl
+    public partial class OrderEditForm : UserControl
     {
         private OrderRepository _orderRepository;
         private Helpers.Uitls.Operations _operation;
         private Order _orderToEdit;
 
 
-        public CreateOrderControl(Uitls.Operations operation, Order orderToEdit = null)
+        public OrderEditForm(Uitls.Operations operation, Order orderToEdit = null)
         {
             InitializeComponent();
 
@@ -37,6 +37,7 @@ namespace Gestionale.WinForm.UserControls
                     textBoxTotalAmount.Text = string.Empty;
                     textBoxCustomerId.Text = string.Empty;
                     textBoxCustomerId.Enabled = true; 
+                    buttonClear.Enabled = true;
                     labelDateValue.Text = DateTime.UtcNow.ToShortDateString();
                     break;
                 case Helpers.Uitls.Operations.Edit:
@@ -44,6 +45,7 @@ namespace Gestionale.WinForm.UserControls
                     textBoxTotalAmount.Text = _orderToEdit.TotalAmount.ToString();
                     textBoxCustomerId.Text = _orderToEdit.CustomerId.ToString();
                     textBoxCustomerId.Enabled = false; // CustomerId should not be editable
+                    buttonClear.Enabled = false;
                     labelDateValue.Text = _orderToEdit.OrderDate.ToShortDateString();
                     break;
                 default:

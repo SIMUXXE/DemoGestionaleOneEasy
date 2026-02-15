@@ -5,12 +5,12 @@ using System.Windows.Forms;
 
 namespace Gestionale.WinForm.UserControls
 {
-    public partial class CreateCustomerControl : UserControl
+    public partial class CustomerEditForm : UserControl
     {
         private CustomerRepository _customerRepository;
         private Helpers.Uitls.Operations _operation;
         private Customer _customerToEdit;
-        public CreateCustomerControl(Helpers.Uitls.Operations operation, Customer customerToEdit = null)
+        public CustomerEditForm(Helpers.Uitls.Operations operation, Customer customerToEdit = null)
         {
             InitializeComponent();
 
@@ -27,12 +27,14 @@ namespace Gestionale.WinForm.UserControls
                     textBoxEmail.Text = string.Empty;
                     textBoxFirstName.Text = string.Empty;
                     textBoxLastName.Text = string.Empty;
+                    buttonClear.Enabled = true;
                     break;
                 case Helpers.Uitls.Operations.Edit:
                     labelTitle.Text = "Edit Customer";
                     textBoxEmail.Text = _customerToEdit.Email;
                     textBoxFirstName.Text = _customerToEdit.FirstName;
                     textBoxLastName.Text = _customerToEdit.LastName;
+                    buttonClear.Enabled = false;
                     break;
                 default:
                     throw new ArgumentException("Invalid operation type");

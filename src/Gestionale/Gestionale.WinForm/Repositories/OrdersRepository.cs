@@ -56,8 +56,7 @@ namespace Gestionale.WinForm.Repositories
                 try
                 {
                     connection.Open();
-                    using (var cmd = new SqlCommand(
-                        "SELECT Id, OrderDate, TotalAmount, CustomerId FROM Orders WHERE Id=@Id", connection))
+                    using (var cmd = new SqlCommand("SELECT Id, OrderDate, TotalAmount, CustomerId FROM Orders WHERE Id=@Id", connection))
                     {
                         cmd.Parameters.AddWithValue("@Id", id);
 
