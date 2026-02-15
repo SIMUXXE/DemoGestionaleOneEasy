@@ -38,7 +38,6 @@ namespace Gestionale.WinForm.Repositories
                 }
                 catch (Exception ex)
                 {
-                    connection.Close();
                     throw new Exception("An error occurred while retrieving customers.", ex);
                 }
                 finally
@@ -81,7 +80,6 @@ namespace Gestionale.WinForm.Repositories
                 }
                 catch (Exception ex)
                 {
-                    connection.Close();
                     throw new Exception("An error occurred while retrieving customers.", ex);
                 }
                 finally
@@ -113,7 +111,6 @@ namespace Gestionale.WinForm.Repositories
                 }
                 catch (Exception ex)
                 {
-                    connection.Close();
                     throw new Exception("An error occurred while creating the customer.", ex);
                 }
                 finally
@@ -141,7 +138,6 @@ namespace Gestionale.WinForm.Repositories
                 }
                 catch (Exception ex)
                 {
-                    connection.Close();
                     throw new Exception("An error occurred while updating the customer.", ex);
                 }
                 finally

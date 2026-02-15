@@ -35,7 +35,6 @@ namespace Gestionale.WinForm.Repositories
                 }
                 catch (Exception ex)
                 {
-                    connection.Close();
                     throw new Exception("Error retrieving orders: " + ex.Message);
                 }
                 finally
@@ -77,7 +76,6 @@ namespace Gestionale.WinForm.Repositories
                 }
                 catch (Exception ex)
                 {
-                    connection.Close();
                     throw new Exception("Error retrieving order by Id: " + ex.Message);
                 }
                 finally
@@ -120,7 +118,6 @@ namespace Gestionale.WinForm.Repositories
                 }
                 catch (Exception ex)
                 {
-                    connection.Close();
                     throw new Exception("Error retrieving orders by customer: " + ex.Message);
                 }
                 finally
@@ -151,7 +148,6 @@ namespace Gestionale.WinForm.Repositories
                 }
                 catch (Exception ex)
                 {
-                    connection.Close();
                     throw new Exception("Error creating order: " + ex.Message);
                 }
                 finally
@@ -182,7 +178,6 @@ namespace Gestionale.WinForm.Repositories
                 }
                 catch (Exception ex)
                 {
-                    connection.Close();
                     throw new Exception("Error updating order: " + ex.Message);
                 }
                 finally
@@ -207,7 +202,6 @@ namespace Gestionale.WinForm.Repositories
                 }
                 catch (Exception ex)
                 {
-                    connection.Close();
                     throw new Exception("Error deleting order: " + ex.Message);
                 }
                 finally
